@@ -1,0 +1,23 @@
+{
+    "name": "adaction/real_fizzbuzz_kl",
+    "description": "Kyle Luke submission of Real FizzBuzz project.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyle Luke",
+            "email": "luke.kylew@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FizzBuzz\\": "src/",
+            "Test\\FizzBuzz\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
