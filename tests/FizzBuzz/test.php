@@ -44,13 +44,15 @@
         $actual = $app->stepOne(30);
         $this->assertSame("1",    $actual[  1 - 1]);
         $this->assertSame("2",    $actual[  2 - 1]);
-        $this->assertSame("Fizz", $actual[  3 - 1]);
+        $this->assertSame("lucky", $actual[  3 - 1]);
         $this->assertSame("4",    $actual[  4 - 1]);
         $this->assertSame("Buzz", $actual[  5 - 1]);
+        $this->assertSame("Fizz", $actual[  6 - 1]);
+
+        $this->assertSame("FizzBuzz", $actual[  15 - 1]);
         
         $this->assertSame("29",       $actual[ 29 - 1]);
-        $this->assertSame("FizzBuzz", $actual[ 30 - 1]);
-
+        $this->assertSame("lucky", $actual[ 30 - 1]);
     }
 
 }
